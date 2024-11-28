@@ -1,5 +1,5 @@
 repeat task.wait(0.25) until game:IsLoaded();
-getgenv().Image = "rbxassetid://982406439"; -- put a asset id in here to make it work
+getgenv().Image = "rbxassetid://8932053668"; -- put a asset id in here to make it work
 getgenv().ToggleUI = "E" -- This where you can Toggle the Fluent ui library
 
 task.spawn(function()
@@ -28,7 +28,7 @@ end)
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "BaChaCuHub" Beta,
+    Title = "CatHub" ,
     SubTitle = "by phuc",
     TabWidth = 160,
     Size = UDim2.fromOffset(520, 340),
@@ -36,3 +36,6 @@ local Window = Fluent:CreateWindow({
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.E -- Used when theres no MinimizeKeybind
 })
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main Farm", Icon = "" }),
+}
